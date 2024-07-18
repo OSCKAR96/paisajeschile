@@ -1,0 +1,106 @@
+/* Estilos generales */
+/* "body * {}" son todos los elementos dentro del body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open sans", sans-serif;
+    background-image: url("../img/background.jpg");
+    background-size: cover; /* para que se estire lo mas posible */
+    background-repeat: no-repeat;
+    height: 100vh; /* va ser al 100 del alto de la ventana del navegador; view port heigt */
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600;700&display=swap'); /* Importa las fuentes Playfair Display y Open Sans */
+
+
+
+.header{
+    padding: 20px;
+}
+
+.logo__imagen{
+    max-width: 200px;
+}
+
+.main{
+    padding: 20px;
+    text-align: center;
+}
+
+.main__container{
+    max-width: 1200px; /* cuando llega a los 900 no se mueve mas */
+    /* justify-content: center; lo centra independiente del la pantalla */
+}
+
+.main__tittle{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.main__tittle--emphasis{
+    font-family: "Playfair display",serif;
+    font-size: 10rem;
+    font-weight: 200;
+    display: block;
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0px 0px 5px grey;
+    position: relative;
+    margin: 20px auto; /* el primer valor es de la y y el segundo valor es de la x */
+    padding: 20px;
+}
+
+.form__label{
+    display: block;
+    margin-top: 3px;
+    color: #383d40;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 3px;
+}
+
+.form__input--text,
+.form__input--date,
+.form__select{
+    width: calc(100% - 16px);
+    border: 1px solid #818481;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+
+.form__input--text::placeholder,
+.form__input--date::placeholder{
+    color: #818481;
+}
+
+.form__select{
+    color: #818481;
+}
+
+.button{
+    margin-top: 5px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+.button--positive{
+    background-color: #44bba4;
+}
+
+.button--default{
+    background-color: #e94f37;
+}
+
+.form .button--default{
+    display: block;
+    margin: 20px auto 0px;
+}
